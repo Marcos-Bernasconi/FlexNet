@@ -1,0 +1,550 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+  
+}
+
+
+
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 0px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #0f0f0f;
+    border-radius: 16px;
+    margin-inline: 1rem;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(93, 93, 93);
+    width: 10px;
+    border-radius: 16px;  
+   
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(158, 158, 158);
+    width: 10px;
+    border-radius: 16px;  
+   
+  }
+  
+
+
+
+
+:root{
+--background-color: rgba(7, 0, 0, 1);
+--text-color: rgba(229, 229, 229, 1);
+--primary-color: rgba(177, 15, 23, 1);
+--secondary-color: rgba(33, 28, 28, 1);
+--tertiary-color:  rgba(16, 11, 11, 1);
+}
+
+html,body{
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--background-color);
+}
+
+p,h1, h2, h3{
+    color: var(--text-color);
+
+}
+h1{
+    font-size: 1.2rem;
+    font-weight: 600; 
+}
+h2{
+    font-size: 1.2rem; 
+    font-weight: 600; 
+  }
+
+
+
+
+  nav{
+   
+    padding: 1rem 2rem;
+   margin-left: 3vw; 
+  
+   background-color: var(--background-color);
+   border-bottom-right-radius: 1rem;
+   border-bottom-left-radius: 1rem;
+   position: fixed;
+   z-index: 1;
+   display: none;
+
+
+  }
+
+  nav ul{
+   
+    display: flex;
+    justify-content: flex-end;
+    gap: 10rem;
+    align-items: center;
+   
+  }
+
+  li{
+    color: var(--text-color);
+    list-style: none;
+    cursor: pointer;
+    
+  }
+
+  .mobile{
+    display: block;
+    background-color: var(--background-color);
+    margin: 0;
+    
+    padding: 0.5rem  1rem;
+   
+}
+
+.mobile h1{
+    color: #e63d45;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+ 
+}
+  .flexnet{
+    margin-right:auto;
+  }
+
+  .account{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .menu:hover .profile{
+    display: block;
+  }
+  .icon{
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    background-size: contain;
+    background-image: url(images/small/account.jpg);
+    display: inline-block;
+  }
+
+
+ .profile{
+    display: none;
+    position: absolute;
+
+   
+    top: 100%;
+    width: 10rem;
+    padding-block: 1rem;
+  
+
+   
+    background-color: var(--background-color);
+    
+    border-radius: 1rem;
+  
+  
+  
+ } 
+ .profile div{
+   width: fit-content;
+   margin-inline: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;  
+ }
+
+ .log{
+   color: var(--primary-color);
+   border-top:solid var(--secondary-color) 1px;
+   padding-top: 0.5rem;
+ }
+ .profile div p:hover, nav ul .hover:hover{
+    cursor: pointer;
+    color: #cd4e54;
+ }
+main p,main .cta, main h2, main h3,main .cover,.tag,footer{
+ 
+   margin-inline: 1rem;
+}
+
+
+.mainCategory{
+    overflow: hidden;
+    transform: rotate(0.00001deg);
+    width: min(100vw,120rem);
+    height: max(45vh,25rem);
+    margin-inline: auto;
+    background-color: var(--background-color);
+    background-image: url(images/big/Batman.jpg);
+    background-size: 180%;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    /* background-position: -0rem 0rem; */
+}
+
+.video{
+    display: none;
+    position: absolute;
+    overflow: hidden;
+  
+    top: -15%;
+    width: 100%;
+    height: 130%;
+    
+  
+}
+
+.iframe{
+  
+    
+    position: absolute;
+  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: -1;  */
+   
+}
+
+.duration{
+    padding-top: 4rem;
+  font-size:   0.9rem;
+
+}
+.movieTitle{
+padding-top: 0.4rem;
+font-size: 3rem;
+font-weight: 600;
+
+}
+
+.movieDescription{
+    margin-top: 1rem;
+    width: 28ch;
+    line-height: 1.8rem;
+}
+
+.cta{
+    margin-top: 3rem;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 100vh;
+    font-size: 1rem;
+}
+
+.popular{
+
+margin-top: 2rem;
+}
+
+.sectionTitle{
+    display: inline-block;
+}
+.dropDown{
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.3rem 0.7rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    outline: none;
+
+}
+
+
+.movies{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+ overflow-x: auto;
+ scroll-snap-type: x mandatory;
+ padding-bottom: 1rem;  
+}
+
+.movies div{
+    scroll-snap-align: start;
+}
+
+.cover{
+
+margin-top: 2rem;
+width: 10rem;
+height: 15rem;
+background-color: var(--text-color);
+background-size: cover;
+border-radius: 0.5rem;
+}
+
+.movieName{
+    margin-top: 1rem;
+    font-size: 1rem;
+    
+}
+.movieData{
+    margin-top: 0.4rem;
+    font-size: 0.7rem;
+}
+
+/* .duration, .movieData{
+  
+} */
+.trending{
+    margin-top: 3rem;
+}
+
+.tag{
+    margin-top: 1.5rem;
+    
+}
+.tag button{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.3rem 1rem;
+    border: none;
+    border-radius: 100vh;
+    font-size: 1rem;
+    margin-inline: 0.3rem;
+    cursor: pointer;
+   
+}
+.tag .added{
+ 
+ background-color: #2f2c2c;
+ 
+
+}
+
+.tag .nonselected{
+    background-color: #171515;
+    color: #9e9797;
+}
+.choice button:hover{
+    background-color: #2f2c2c;
+    color: white;
+
+}
+.tags{
+    display: none;
+    position: absolute;
+  width: min(20rem,100%);
+   height: min(20rem,100%);
+   border-radius: 1rem;
+    background-color: var(--tertiary-color);
+ padding: 1rem;
+}
+
+
+.choice {
+    overflow-x: scroll;
+   
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-block: 1rem;
+}
+
+.tags h2{
+    margin-block: 2rem;
+    margin-inline: 0;
+}
+
+.tags .confirm{
+  
+    display: block;
+    margin-top: 3rem;
+    padding: 0.5rem 5rem;
+   margin-inline: auto;
+    border-radius: 0;
+   font-size: 1.2rem;
+}
+.week{
+    width: min(100%,40rem);
+    padding-top: 2rem ;
+    margin-top: 4rem;
+ 
+    border: solid #1e1e1e 2px;
+    border-radius: 1rem;
+    padding-bottom: 2rem;
+    margin-inline: auto;
+}
+.containerMovie{
+    padding-inline: 1rem;
+    margin-top: 3rem;
+   display: flex;
+    
+   justify-content: space-between;
+   align-items: center;
+
+   
+
+}
+
+.number{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.information{
+    width: 50%;
+   
+}
+.movieTop{
+    font-size: 1.2rem;
+}
+.poster{
+    width: 9rem;
+    height: 7rem;
+    background-size: cover;
+    border-radius: 0.5rem;
+}
+
+.resize{
+    background-position: 0rem -3rem;
+}
+
+footer{
+    margin-block: 2rem;
+}
+footer h1,ul h1{
+    color: #e63d45;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+}
+.info{
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+
+}
+.info p{
+    
+   margin-inline: 0;
+   cursor: pointer;
+    
+}
+
+@media Screen and (min-width: 500px){
+
+    .mainCategory{
+        
+        height: 60vh;
+        background-size: cover;
+        background-position: 0rem 0rem;
+    }
+    .duration{
+        padding-top: 9rem;
+    }
+    .movieTitle{
+        font-size: 4rem;
+    }
+   
+    .movieTop{
+        font-size: 1.6rem;
+    }
+   .poster{
+    width: 17rem;
+    height: 10rem;
+   }
+   .resize{
+    background-position: 0rem -5rem;
+   }
+}
+
+@media Screen and (min-width:1200px){
+    .mobile{
+        display: none;
+    }
+nav{
+    display: block;
+}
+.video{
+    z-index: -1;
+}
+
+}
+@media Screen and (min-width: 1300px){
+
+
+    *::-webkit-scrollbar {
+        height: 25px;
+        width: 0px;
+      }
+
+      *::-webkit-scrollbar-thumb {
+       
+border: solid 10px #0f0f0f;
+
+      }
+
+
+    *::-webkit-scrollbar-track {
+        
+        margin-inline: 0rem;
+      }
+
+    h2{
+        font-size: 1.7rem;
+    }
+
+.mainCategory{
+    
+   height: 70vh;
+   background-position: 10rem 0rem;
+   position: relative; 
+   background-image: linear-gradient(87deg, rgba(7,0,0,1) 50%, rgba(71,2,2,0) 100%)
+   ,url(images/big/Batman.jpg);
+   background-size: 20% 100%,cover;
+
+}
+    .movieName{
+        font-size: 1.5rem;
+    }
+  
+    .movieDescription{
+        width: 55ch;
+    }
+
+   main p,main .cta, main h2, main h3,main .cover,.tag,footer,.information .movieData{
+    margin-left: 10%;
+   }
+
+   main .movies{
+    gap: 3rem;
+    margin-left: 10%;
+    padding-bottom: 2rem; 
+   }
+
+
+   main .cover, main .movieData, main .movies .movieName{
+    
+    margin-inline: 0;
+   
+   }
+
+   
+   .cover{
+    width: 15rem;
+    height: 22rem;
+   }
+}
