@@ -402,7 +402,7 @@ ul h1 {
   .mainCategory {
     height: 32rem;
     background-size: cover;
-    background-position: 0rem 0rem;
+    background-position: -40% 0%;
   }
   .duration {
     padding-top: 7rem;
