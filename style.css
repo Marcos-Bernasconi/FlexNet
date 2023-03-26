@@ -163,10 +163,11 @@ footer {
 }
 
 .mainCategory {
+  display: block;
   overflow: hidden;
   transform: rotate(0.00001deg);
   width: min(100vw, 120rem);
-  height: max(45vh, 25rem);
+  height: 25rem;
   margin-inline: auto;
   background-color: var(--background-color);
   background-image: url(images/big/Batman.jpg);
@@ -399,12 +400,12 @@ ul h1 {
 
 @media Screen and (min-width: 500px) {
   .mainCategory {
-    height: 60vh;
+    height: 32rem;
     background-size: cover;
     background-position: 0rem 0rem;
   }
   .duration {
-    padding-top: 9rem;
+    padding-top: 7rem;
   }
   .movieTitle {
     font-size: 4rem;
@@ -422,18 +423,7 @@ ul h1 {
   }
 }
 
-@media Screen and (min-width: 1200px) {
-  .mobile {
-    display: none;
-  }
-  nav {
-    display: block;
-  }
-  .video {
-    z-index: -1;
-  }
-}
-@media Screen and (min-width: 1300px) {
+@media Screen and (min-width: 1100px) {
   *::-webkit-scrollbar {
     height: 25px;
     width: 0px;
@@ -447,12 +437,22 @@ ul h1 {
     margin-inline: 0rem;
   }
 
+  .mobile {
+    display: none;
+  }
+  nav {
+    display: block;
+  }
+  .video {
+    z-index: -1;
+  }
+
   h2 {
     font-size: 1.7rem;
   }
 
   .mainCategory {
-    height: 70vh;
+    height: 35rem;
     background-position: 10rem 0rem;
     position: relative;
     background-image: linear-gradient(
@@ -461,7 +461,9 @@ ul h1 {
         rgba(71, 2, 2, 0) 100%
       ),
       url(images/big/Batman.jpg);
-    background-size: 20% 100%, cover;
+    background-size: 20% 100%, 70%;
+    max-width: 1800px;
+    background-position: top left, top right;
   }
   .movieName {
     font-size: 1.5rem;
